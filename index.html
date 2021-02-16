@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Coffeetee - зернова кава</title>
+  </head>
+
+  <body>
+    <script src="main.js"></script>
+
+    <div class="header">
+      <div class="title">
+        <h1>Coffeetee</h1>
+        <h2>ЗАМОВЛЕННЯ І ДОСТАВКА КАВИ</h2>
+        <h3>
+          Немає нічого кращого, ніж збадьоритися чашкою хорошої ароматної кави.
+          Навіть розчинний напій призводить до працездатного стану рано вранці,
+          після тривалої роботи зі звітами за комп'ютером або співбесіди з новим
+          співробітником. Часто так буває, що кава закінчується в самий
+          невідповідний момент. Але це не біда, якщо ви вже працюєте з нашою
+          компанією по доставці кави "Coffeetee". Своїх клієнтів ми забезпечимо
+          відбірною кавою.
+        </h3>
+      </div>
+    </div>
+    <div class="container">
+      <table>
+        <tr>
+          <th>Зовнішній вигляд товару</th>
+          <th>Опис товару</th>
+          <th>Склад</th>
+          <th>Вартість</th>
+        </tr>
+        <tr>
+          <td>
+            <img
+              src="./assets/coffeebeans-arabica-brasilia-cerrado.jpg"
+              alt="arabica brasilia cerrado"
+            />
+          </td>
+          <td>Кофе в зёрнах Trevi Арабика Бразилия Серрадо 1 кг</td>
+          <td>Арабика 100%</td>
+          <td>372 грн</td>
+        </tr>
+        <tr>
+          <td>
+            <img
+              src="./assets/coffeebeans-arabica-ethiopia-sidamo.jpg"
+              alt="arabica ethiopia sidamo"
+            />
+          </td>
+          <td>Кофе в зёрнах Trevi Арабика Эфиопия Сидамо 1 кг</td>
+          <td>Арабика 100%</td>
+          <td>345 грн</td>
+        </tr>
+        <tr>
+          <td>
+            <img
+              src="./assets/coffeebeans-arabica-nikaragua-maragogype.jpg"
+              alt="arabica nikaragua maragogype"
+            />
+          </td>
+          <td>Кофе в зёрнах Trevi Арабика Никарагуа Марагоджип 1 кг</td>
+          <td>Арабика 100%</td>
+          <td>630 грн</td>
+        </tr>
+      </table>
+      <form action="submit">
+        <input type="text" name="name" placeholder="Ім'я та прізвище" />
+        <input type="tel" name="tel" placeholder="Номер телефону" required />
+        <input
+          type="text"
+          name="adress"
+          placeholder="Адреса доставки або номер відділення Нової пошти"
+          required
+        />
+        <button class="submit" type="submit">Замовити</button>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../style.css" />
+
+    <title>Звіт</title>
+  </head>
+
+  <body>
+    <script src="../main.js"></script>
+
+    <div class="header">
+      <div class="title">
+        <h1>Web-дизайн</h1>
+      </div>
+      <div class="nav-bar">
+        <a href="./lab1.html" class="active-link">lab 01</a>
+        <a href="./lab2.html">lab 02</a>
+        <a href="./lab3.html">lab 03</a>
+        <a href="./lab4.html">lab 05</a>
+        <a href="./lab5.html">lab 06</a>
+      </div>
+    </div>
+    <div class="grid-container">
+      <div class="nav-list">
+        <ul>
+          <li>
+            <button id="theme" onclick="show('theme', 1)">
+              Тема та постановка задачі лабораторної роботи №1
+            </button>
+          </li>
+          <li>
+            <button id="idea" onclick="show('idea', 1)">
+              Середовище розробки сайту. Місце розташування сайту
+            </button>
+          </li>
+          <li>
+            <button id="code" onclick="show('code', 1)">
+              Зовнішний вигляд сайту. НТМL-коди файлів
+            </button>
+          </li>
+          <li>
+            <ul>
+              <li>
+                <button id="table" onclick="show('table', 1)">
+                  HTML-код ТАБЛИЦЬ
+                </button>
+              </li>
+              <li>
+                <button id="form" onclick="show('form', 1)">
+                  HTML-код ФОРМИ
+                </button>
+              </li>
+              <li>
+                <button id="img" onclick="show('img', 1)">
+                  HTML-код ЗОБРАЖЕННЯ
+                </button>
+              </li>
+              <li>
+                <button id="links" onclick="show('links', 1)">
+                  Використана література
+                </button>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <button id="conclusion" onclick="show('conclusion', 1)">
+              ВИСНОВКИ
+            </button>
+          </li>
+        </ul>
+      </div>
+      <div class="window">
+        <div id="theme-window">
+          <h2>Сайт має відповідати таким функціональним вимогам:</h2>
+          <ul type="circle">
+            <li>Гість повинен мати можливість переглядати сайт</li>
+            <li>Гість повинен мати можливість сортувати каталог товарів</li>
+            <li>Гість повинен мати можливість замовляти доставку товарів</li>
+            <li>
+              Адміністратор повинен мати усі можливості та повноваження гостя
+            </li>
+            <li>
+              Адміністратор повинен мати можливість оновлювати вміст сайту
+            </li>
+          </ul>
+          <img src="../assets/lab01/use case.jpg" alt="use cade diaram" />
+        </div>
+        <div id="idea-window" hidden="true">
+          <h2>Visual Studio Code</h2>
+          <h2>index.html in folder on https://</h2>
+        </div>
+        <div id="code-window" hidden="true"></div>
+        <div id="table-window" hidden="true"></div>
+        <div id="form-window" hidden="true"></div>
+        <div id="img-window" hidden="true"></div>
+        <div id="links-window" hidden="true"></div>
+        <div id="conclusion-window" hidden="true"></div>
+      </div>
+    </div>
+  </body>
+</html>
