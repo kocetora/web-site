@@ -24,6 +24,11 @@
           компанією по доставці кави "Coffeetee". Своїх клієнтів ми забезпечимо
           відбірною кавою.
         </h3>
+        <ul>
+          <li>Швидко</li>
+          <li>Зручно</li>
+          <li>Смачно</li>
+        </ul>
       </div>
     </div>
     <div class="container">
@@ -69,7 +74,12 @@
         </tr>
       </table>
       <form action="submit">
-        <input type="text" name="name" placeholder="Ім'я та прізвище" />
+        <input
+          type="text"
+          name="name"
+          placeholder="Ім'я та прізвище"
+          required
+        />
         <input type="tel" name="tel" placeholder="Номер телефону" required />
         <input
           type="text"
@@ -77,8 +87,9 @@
           placeholder="Адреса доставки або номер відділення Нової пошти"
           required
         />
-        <button class="submit" type="submit">Замовити</button>
+        <input type="submit" value="Замовити" />
       </form>
     </div>
+    <p id="floated">kocetora.inc</p>
   </body>
 </html>
